@@ -1,0 +1,130 @@
+/* Основные стили для body */
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f6f8fa;
+  color: #24292f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Обеспечивает заполнение всего экрана */
+}
+
+/* Заголовочная часть */
+.header {
+  margin: 40px 0;
+  text-align: center; /* Центруем содержимое заголовочной части */
+}
+
+.header__avatar {
+  border-radius: 50%; /* Сделаем аватар круглым */
+  max-width: 180px; /* Ограничиваем максимальный размер аватара */
+  margin: 0 auto; /* Центрирование изображения */
+}
+
+.header__title {
+  margin: 30px 0 10px 0;
+  font-size: 32px;
+  line-height: 1.2;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header__subtitle {
+  color: #24292f;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Секция ссылок */
+.links {
+  width: 200%; /* Используем процентное соотношение для адаптации к разным экранам */
+  max-width: 400px; /* Ограничиваем максимальную ширину секции */
+  margin-bottom: 40px;
+  text-align: left; /* Выровняем текст по левому краю */
+}
+
+.links__header {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.links__container {
+  background-color: #fff;
+  list-style-type: none;
+  border: 1px solid hsla(210, 18%, 87%, 1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%; /* Полностью заполняем родительский контейнер */
+}
+
+.links__link,
+.links__title {
+  font-size: 16px; /* Установим разумный размер шрифта */
+  line-height: 1.4;
+  color: #57606a;
+}
+
+.links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Выравниваем элементы по центру */
+  padding: 10px 0; /* Добавляем отступы сверху и снизу */
+  gap: 30px; /* Увеличиваем расстояние между элементами */
+  border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+  width: 100%; /* Заполняем всю ширину родителя */
+}
+
+.links__link:last-child {
+  border-bottom: none; /* Убираем нижнюю границу у последнего элемента */
+}
+
+.links__link,
+.links__link:visited {
+  text-decoration: none;
+  color: #0969da;
+}
+
+.links__title {
+  margin: 0;
+  min-width: 120px; /* Задаем минимальную ширину для заголовка */
+}
+
+/* Футер */
+footer {
+  margin: 0 0 40px 0;
+  text-align: center; /* Центруем содержимое футера */
+}
+
+/* Стилизация кнопки */
+.button-link {
+  box-sizing: border-box;
+  display: inline-flex; /* Изменяем на inline-flex для лучшего размещения */
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Увеличиваем горизонтальные отступы */
+  width: 200px;
+  background: #fff;
+  border: 1px solid rgba(27, 31, 36, 0.15);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #0969da;
+  text-decoration: none;
+  cursor: pointer; /* Добавляем указатель для взаимодействия */
+}
+
+.button-link:hover {
+  background-color: #0969da;
+  color: #fff;
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1);
+  transition: all 0.3s ease-in-out; /* Анимация при наведении */
+}
